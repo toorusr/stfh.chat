@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div class="text-xs text-right opacity-25" id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/imprint">Imprint</router-link> |
@@ -22,7 +22,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 15px;
 }
 
 #nav a {
