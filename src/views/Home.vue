@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       image: {
-        backgroundImage: "url(" + require("@/assets/img/home.png") + ")"
+        backgroundImage: "url(" + require("@/assets/img/home.svg") + ")"
       }
     };
   }
