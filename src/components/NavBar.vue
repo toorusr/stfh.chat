@@ -13,13 +13,7 @@
 
 <script>
 export default {
-  name: 'PersonCard',
-  props: {
-    name: String,
-    title: String,
-    website: String,
-    handle: String,
-  }
+  name: 'NavBar',
 }
 </script>
 
