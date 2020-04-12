@@ -62,5 +62,6 @@ export default {
 
 .montserrat {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 </style>
