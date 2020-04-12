@@ -12,7 +12,7 @@
     <router-link to="/about" class="px-10 py-2 bg-green-400 opacity-50 text-white rounded-lg text-xl hover:opacity-100">more info</router-link>
   </div>
   <footer class="mt-32">
-    <p class="bree text-left opacity-50 max-w-xs">*We are giving away 90% of the overall earnings and donate it to the WHO Responsiblity Fund for COVID-19. So you are technically really supporting the humanity.</p>
+    <p class="bree text-left opacity-50 max-w-xs">*We are giving away 80% of the overall earnings and donate it to the WHO Responsiblity Fund for COVID-19. So you are technically really supporting the humanity.</p>
     <div class="flex justify-between flex-row mt-4">
       <div class="text-xs montserrat flex flex-row">
         <p class="my-auto text-green-400">&copy; 2020 STFH</p>
