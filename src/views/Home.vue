@@ -16,14 +16,14 @@
   </div>
   <footer class="mt-16 md:mt-32 xl:mt-64 xl:pt-64">
     <div class="flex mb-16 flex-wrap justify-center my-8 md:hidden">
-      <img class="opacity-50 mx-4" src="@/assets/img/withlove.svg" />
-      <a href="https://max.berlin/p/stfh.chat"><img class="opacity-50 hover:opacity-100 mx-4" src="@/assets/img/max.berlin.svg" /></a>
-      <img class="opacity-50 mr-4" src="@/assets/img/&.svg" />
-      <a href="https://dnd.one/?ref=https://stfh.chat"><img class="opacity-50 hover:opacity-100" src="@/assets/img/dnd.svg" /></a>
+      <img class="opacity-50 mb-4 mx-4" src="@/assets/img/withlove.svg" />
+      <a href="https://max.berlin/p/stfh.chat"><img class="h-12 opacity-50 hover:opacity-100 mr-4" src="@/assets/img/max.berlin.svg" /></a>
+      <img class="opacity-50 h-4 my-auto mx-4" src="@/assets/img/&.svg" />
+      <a href="https://dnd.one/?ref=https://stfh.chat"><img class="h-12 ml-4 opacity-50 hover:opacity-100" src="@/assets/img/dnd.svg" /></a>
     </div>
     <p class="bree text-left opacity-50 max-w-xs">*We are giving away 80% of the overall earnings and donate it to the WHO Responsiblity Fund for COVID-19. So you are technically really supporting the humanity.</p>
     <div class="flex justify-between flex-row mt-4">
-      <div class="text-xs montserrat flex flex-wrap md:flex-row justify-center md:justify-left">
+      <div class="text-xs montserrat flex flex-wrap md:flex-row justify-center md:justify-start">
         <p class="my-auto text-green-400">&copy; 2020 STFH</p>
         <div class="flex text-green-400 ml-4 flex-row">
           <router-link class="opacity-50 mx-2 hover:opacity-100 my-auto" to="/imprint">IMPRINT</router-link>
