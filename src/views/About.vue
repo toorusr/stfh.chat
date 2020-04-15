@@ -1,20 +1,23 @@
 <template>
   <div>
     <NavBar />
-    <div class="flex flex-row">
-      <div class="text-left text-green-400 px-20 w-2/3">
-        <h1 class="bree text-5xl">The app that is designed to only work when your phone is charging.</h1>
-        <p class="mt-6 text-xl opacity-75">Chat with other heroes which are truly helping the humanity to survive by just staying at home.</p>
+    <div class="flex justify-center sm:hidden">
+      <img class="w-1/2" src="@/assets/img/choose_room.svg" />
+    </div>
+    <div class="mt-8 lg:mt-0 flex lg:flex-row">
+      <div class="text-left text-green-400 px-8 lg:px-20 lg:w-2/3">
+        <h1 class="bree text-2xl md:text-5xl">The app that is designed to only work when your phone is charging.</h1>
+        <p class="mt-6 text-s sm:text-xl opacity-75">Chat with other heroes which are truly helping the humanity to survive by just staying at home.</p>
         <p class="font-bold mt-8">What you will get:</p>
-        <div class="my-4 flex flex-row">
-          <div class="w-1/3 p-4 flex flex-col">
+        <div class="my-4 flex flex-wrap sm:flex-row justify-center">
+          <div class="w-2/3 sm:w-1/3 p-4 flex flex-col">
             <svg class="mx-auto mb-3" width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M54.6 25.2C54.6 28.5417 53.2725 31.7466 50.9096 34.1096C48.5466 36.4725 45.3417 37.8 42 37.8C38.6583 37.8 35.4534 36.4725 33.0905 34.1096C30.7275 31.7466 29.4 28.5417 29.4 25.2C29.4 21.8583 30.7275 18.6534 33.0905 16.2905C35.4534 13.9275 38.6583 12.6 42 12.6C45.3417 12.6 48.5466 13.9275 50.9096 16.2905C53.2725 18.6534 54.6 21.8583 54.6 25.2ZM75.6 33.6C75.6 35.8278 74.715 37.9644 73.1397 39.5397C71.5644 41.115 69.4278 42 67.2 42C64.9722 42 62.8356 41.115 61.2603 39.5397C59.685 37.9644 58.8 35.8278 58.8 33.6C58.8 31.3722 59.685 29.2356 61.2603 27.6603C62.8356 26.085 64.9722 25.2 67.2 25.2C69.4278 25.2 71.5644 26.085 73.1397 27.6603C74.715 29.2356 75.6 31.3722 75.6 33.6ZM58.8 63C58.8 58.5444 57.03 54.2712 53.8794 51.1206C50.7288 47.97 46.4556 46.2 42 46.2C37.5444 46.2 33.2712 47.97 30.1206 51.1206C26.97 54.2712 25.2 58.5444 25.2 63V75.6H58.8V63ZM25.2 33.6C25.2 35.8278 24.315 37.9644 22.7397 39.5397C21.1644 41.115 19.0278 42 16.8 42C14.5722 42 12.4356 41.115 10.8603 39.5397C9.28501 37.9644 8.40001 35.8278 8.40001 33.6C8.40001 31.3722 9.28501 29.2356 10.8603 27.6603C12.4356 26.085 14.5722 25.2 16.8 25.2C19.0278 25.2 21.1644 26.085 22.7397 27.6603C24.315 29.2356 25.2 31.3722 25.2 33.6ZM67.2 75.6V63C67.2061 58.7298 66.1218 54.5287 64.05 50.7948C65.9121 50.3183 67.8584 50.2733 69.7404 50.6634C71.6225 51.0535 73.3906 51.8683 74.9099 53.0456C76.4292 54.223 77.6595 55.7318 78.5069 57.4569C79.3544 59.182 79.7967 61.0779 79.8 63V75.6H67.2ZM19.95 50.7948C17.8784 54.5288 16.7941 58.7298 16.8 63V75.6H4.20001V63C4.1992 61.0766 4.63876 59.1785 5.48499 57.4512C6.33122 55.7239 7.56167 54.2133 9.08202 53.0351C10.6024 51.857 12.3723 51.0425 14.2561 50.6542C16.1399 50.2658 18.0877 50.3139 19.95 50.7948Z" fill="#6FD786"/>
             </svg>
             <p class="font-bold text-center mb-2">Chatrooms with <br>other heroes.</p>
             <p class="text-xs montserrat text-justify text-gray-500">Chat with other people who are saving the humanity by staying at home and having beautiful conversations.</p>
           </div>
-          <div class="w-1/3 p-4 flex flex-col">
+          <div class="w-2/3 sm:w-1/3 p-4 flex flex-col">
             <svg class="mx-auto mb-3" width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3224 21.7224C16.4728 18.5729 20.7452 16.8036 25.2 16.8036C29.6547 16.8036 33.9271 18.5729 37.0776 21.7224L42 26.6406L46.9224 21.7224C48.4721 20.1178 50.3259 18.838 52.3756 17.9575C54.4252 17.077 56.6297 16.6136 58.8604 16.5942C61.0911 16.5748 63.3033 16.9999 65.368 17.8446C67.4327 18.6893 69.3084 19.9368 70.8858 21.5142C72.4632 23.0916 73.7107 24.9673 74.5554 27.032C75.4001 29.0966 75.8252 31.3089 75.8058 33.5395C75.7864 35.7702 75.3229 37.9747 74.4425 40.0244C73.562 42.0741 72.2821 43.9279 70.6776 45.4776L42 74.1594L13.3224 45.4776C10.1729 42.3271 8.40356 38.0548 8.40356 33.6C8.40356 29.1453 10.1729 24.8729 13.3224 21.7224Z" fill="#6FD786"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4828 55.4207C45.1459 55.4207 47.7 54.3628 49.5831 52.4796C51.4662 50.5965 52.5242 48.0425 52.5242 45.3793C52.5242 42.7162 51.4662 40.1621 49.5831 38.279C47.7 36.3959 45.1459 35.3379 42.4828 35.3379C39.8196 35.3379 37.2656 36.3959 35.3825 38.279C33.4993 40.1621 32.4414 42.7162 32.4414 45.3793C32.4414 48.0425 33.4993 50.5965 35.3825 52.4796C37.2656 54.3628 39.8196 55.4207 42.4828 55.4207ZM35.3685 42.9029C35.8345 41.5683 36.666 40.3914 37.7684 39.5064C38.1047 40.0197 38.6846 40.3586 39.3449 40.3586C39.8442 40.3586 40.3231 40.557 40.6762 40.9101C41.0293 41.2632 41.2276 41.742 41.2276 42.2414V42.869C41.2276 43.5348 41.4921 44.1733 41.9629 44.6441C42.4337 45.1148 43.0722 45.3793 43.738 45.3793C44.4037 45.3793 45.0423 45.1148 45.513 44.6441C45.9838 44.1733 46.2483 43.5348 46.2483 42.869C46.2481 42.3072 46.4363 41.7616 46.7829 41.3194C47.1295 40.8773 47.6144 40.5642 48.1599 40.4302C49.3577 41.8004 50.0166 43.5593 50.0138 45.3793C50.0138 45.8061 49.9787 46.2266 49.9096 46.6345H48.7586C48.0929 46.6345 47.4543 46.899 46.9836 47.3698C46.5128 47.8405 46.2483 48.479 46.2483 49.1448V51.9024C45.104 52.5646 43.8049 52.9123 42.4828 52.9103V50.4C42.4828 49.7342 42.2183 49.0957 41.7475 48.6249C41.2767 48.1541 40.6382 47.8897 39.9724 47.8897C39.3067 47.8897 38.6681 47.6252 38.1974 47.1544C37.7266 46.6836 37.4621 46.0451 37.4621 45.3793C37.4623 44.7856 37.2521 44.2111 36.8688 43.7577C36.4855 43.3043 35.9539 43.0014 35.3685 42.9029Z" fill="white"/>
@@ -22,7 +25,7 @@
             <p class="font-bold text-xs text-center mb-3 mt-2">You’re donating to the WHO responsability fund</p>
             <p class="text-xs montserrat text-justify text-gray-500">We donate 80% of our revenue to support various people which are actually saving us.</p>
           </div>
-          <div class="w-1/3 p-4 flex flex-col">
+          <div class="w-2/3 sm:w-1/3 p-4 flex flex-col">
             <svg class="mx-auto mb-3" width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M44.9696 9.6306C44.1819 8.84322 43.1139 8.40089 42.0002 8.40089C40.8865 8.40089 39.8184 8.84322 39.0308 9.6306L9.63077 39.0306C8.86571 39.8227 8.44237 40.8837 8.45194 41.9849C8.46151 43.0861 8.90322 44.1395 9.68193 44.9182C10.4606 45.697 11.5141 46.1387 12.6153 46.1482C13.7165 46.1578 14.7774 45.7345 15.5696 44.9694L16.8002 43.7388V71.4C16.8002 72.5139 17.2427 73.5822 18.0303 74.3699C18.818 75.1575 19.8863 75.6 21.0002 75.6H29.4002C30.5141 75.6 31.5824 75.1575 32.37 74.3699C33.1577 73.5822 33.6002 72.5139 33.6002 71.4V63C33.6002 61.8861 34.0427 60.8178 34.8303 60.0302C35.618 59.2425 36.6863 58.8 37.8002 58.8H46.2002C47.3141 58.8 48.3824 59.2425 49.17 60.0302C49.9577 60.8178 50.4002 61.8861 50.4002 63V71.4C50.4002 72.5139 50.8427 73.5822 51.6303 74.3699C52.418 75.1575 53.4863 75.6 54.6002 75.6H63.0002C64.1141 75.6 65.1824 75.1575 65.97 74.3699C66.7577 73.5822 67.2002 72.5139 67.2002 71.4V43.7388L68.4308 44.9694C69.2229 45.7345 70.2838 46.1578 71.385 46.1482C72.4863 46.1387 73.5397 45.697 74.3184 44.9182C75.0971 44.1395 75.5388 43.0861 75.5484 41.9849C75.558 40.8837 75.1346 39.8227 74.3696 39.0306L44.9696 9.6306Z" fill="#6FD786"/>
             </svg>
@@ -30,10 +33,10 @@
             <p class="text-xs montserrat text-justify text-gray-500">Home is were we stay, when a pandemic crisis accures. And we think that’s beautiful.</p>
           </div>
         </div>
-        <p class="montserrat"><span class="opacity-50">Concept inspired by</span> <a class="opacity-100">diewithme</a><span class="opacity-50"> and </span>staythefuckhome.com<span class="opacity-50">. ;)</span></p>
-        <p class="opacity-50 montserrat mb-8">Oh yeah and we are open source on Github.</p>
+        <p class="montserrat text-xs sm:text-s"><span class="opacity-50">Concept inspired by</span> <a class="opacity-100">diewithme</a><span class="opacity-50"> and </span>staythefuckhome.com<span class="opacity-50">. ;)</span></p>
+        <p class="opacity-50 text-xs sm:text-s montserrat mb-8">Oh yeah and we are open source on Github.</p>
       </div>
-      <div class="flex justify-center">
+      <div class="hidden lg:flex justify-center">
         <img class="w-4/5" src="@/assets/img/choose_room.svg" />
       </div>
     </div>
